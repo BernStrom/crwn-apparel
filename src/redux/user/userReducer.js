@@ -1,6 +1,7 @@
 import { createAction, createReducer } from '@reduxjs/toolkit';
+import { UserActionTypes } from './userTypes';
 
-const setCurrentUser = createAction('SET_CURRENT_USER');
+const setCurrentUser = createAction(UserActionTypes.SET_CURRENT_USER);
 
 const initialState = {
   currentUser: null,
