@@ -44,9 +44,7 @@ class App extends Component {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/shop">
-            <ShopPage />
-          </Route>
+          <Route path="/shop" component={ShopPage} />
           <Route path="/checkout">
             <CheckoutPage />
           </Route>
