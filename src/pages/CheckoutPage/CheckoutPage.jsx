@@ -3,41 +3,47 @@ import { connect } from 'react-redux';
 import CheckoutItem from '../../components/CheckoutItem/CheckoutItem';
 import StripeCheckoutButton from '../../components/StripeCheckoutButton/StripeCheckoutButton';
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cartSelectors';
-import './CheckoutPage.scss';
+import {
+  CheckoutPageContainer,
+  CheckoutHeaderContainer,
+  HeaderBlockContainer,
+  TotalContainer,
+  WarningContainer,
+} from './CheckoutPage.styled';
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <div className="checkout-page">
-    <div className="checkout-header">
-      <div className="header-block">
+  <CheckoutPageContainer>
+    <CheckoutHeaderContainer>
+      <HeaderBlockContainer>
         <span>Product</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlockContainer>
+      <HeaderBlockContainer>
         <span>Description</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlockContainer>
+      <HeaderBlockContainer>
         <span>Quantity</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlockContainer>
+      <HeaderBlockContainer>
         <span>Price</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlockContainer>
+      <HeaderBlockContainer>
         <span>Remove</span>
-      </div>
-    </div>
+      </HeaderBlockContainer>
+    </CheckoutHeaderContainer>
     {cartItems.map((cartItem) => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
 
-    <div className="total">
+    <TotalContainer>
       <span>TOTAL: ${total}</span>
-    </div>
-    <div className="test-warning">
+    </TotalContainer>
+    <WarningContainer>
       *Please use the following test credit card for payments*
       <br />
       4242 4242 4242 4242 - Exp: 03/23 - CWV: 123
-    </div>
+    </WarningContainer>
     <StripeCheckoutButton price={total} />
-  </div>
+  </CheckoutPageContainer>
 );
 
 const mapStateToProps = (state) => ({
