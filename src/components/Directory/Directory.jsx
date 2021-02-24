@@ -2,14 +2,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 import MenuItem from '../MenuItem/MenuItem';
 import { selectDirectorySections } from '../../redux/directory/directorySelectors';
-import './Directory.scss';
+import { DirectoryMenuContainer } from './Directory.styled';
 
 const Directory = ({ sections }) => (
-  <div className="directory-menu">
+  <DirectoryMenuContainer>
     {sections.map(({ id, ...otherSectionProps }) => (
       <MenuItem key={id} {...otherSectionProps} />
     ))}
-  </div>
+  </DirectoryMenuContainer>
 );
 
 const mapStateToProps = (state) => ({
