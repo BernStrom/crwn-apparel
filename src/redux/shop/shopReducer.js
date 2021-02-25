@@ -1,14 +1,20 @@
-import { createReducer } from '@reduxjs/toolkit';
-import SHOP_DATA from './shopData';
+import { createReducer, createAction } from '@reduxjs/toolkit';
+import ShopActionTypes from './shopTypes';
+
+const updateCollections = createAction(ShopActionTypes.UPDATE_COLLECTIONS);
 
 const initialState = {
-  collections: SHOP_DATA,
+  collections: null,
 };
 
 const shopReducer = createReducer(initialState, (builder) => {
-  builder.addDefaultCase((state, action) => {
-    return state;
-  });
+  builder
+    .addCase(updateCollections, (state, action) => {
+      state.collections = action.payload;
+    })
+    .addDefaultCase((state, action) => {
+      return state;
+    });
 });
 
 export default shopReducer;
