@@ -1,18 +1,22 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistStore } from 'redux-persist';
 import logger from 'redux-logger';
+import createSagaMiddleware from 'redux-saga';
+import rootSaga from './rootSaga';
 import rootReducer from './rootReducer';
 
-let loggerMiddleware = null;
+const sagaMiddleware = createSagaMiddleware();
+const middlewares = [sagaMiddleware];
 
 if (process.env.NODE_ENV === 'development') {
-  loggerMiddleware = logger;
+  middlewares.push(logger);
 }
 
 export const store = configureStore({
   reducer: rootReducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({ serializableCheck: false }).concat(loggerMiddleware),
+  middleware: middlewares,
 });
+
+sagaMiddleware.run(rootSaga);
 
 export const persistor = persistStore(store);
