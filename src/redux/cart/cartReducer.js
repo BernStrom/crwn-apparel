@@ -1,11 +1,12 @@
 import { createAction, createReducer } from '@reduxjs/toolkit';
-import { CartActionTypes } from './cartTypes';
+import CartActionTypes from './cartTypes';
 import { addItemToCart, removeItemFromCart } from './cart.utils';
 
 const toggleCartHidden = createAction(CartActionTypes.TOGGLE_CART_HIDDEN);
 const addItem = createAction(CartActionTypes.ADD_ITEM);
 const removeItem = createAction(CartActionTypes.REMOVE_ITEM);
 const clearItemFromCart = createAction(CartActionTypes.CLEAR_ITEM_FROM_CART);
+const clearCart = createAction(CartActionTypes.CLEAR_CART);
 
 const initialState = {
   hidden: true,
@@ -25,6 +26,9 @@ const cartReducer = createReducer(initialState, (builder) => {
     })
     .addCase(clearItemFromCart, (state, action) => {
       state.cartItems = state.cartItems.filter((cartItem) => cartItem.id !== action.payload.id);
+    })
+    .addCase(clearCart, (state, action) => {
+      state.cartItems = [];
     })
     .addDefaultCase((state, action) => {
       return state;
