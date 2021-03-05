@@ -7,6 +7,7 @@ const addItem = createAction(CartActionTypes.ADD_ITEM);
 const removeItem = createAction(CartActionTypes.REMOVE_ITEM);
 const clearItemFromCart = createAction(CartActionTypes.CLEAR_ITEM_FROM_CART);
 const clearCart = createAction(CartActionTypes.CLEAR_CART);
+const setCartFromFirebase = createAction(CartActionTypes.SET_CART_FROM_FIREBASE);
 
 const initialState = {
   hidden: true,
@@ -29,6 +30,9 @@ const cartReducer = createReducer(initialState, (builder) => {
     })
     .addCase(clearCart, (state, action) => {
       state.cartItems = [];
+    })
+    .addCase(setCartFromFirebase, (state, action) => {
+      state.cartItems = action.payload;
     })
     .addDefaultCase((state, action) => {
       return state;
