@@ -18,7 +18,7 @@ CRWN Apparel is an e-commerce clothing and accessories website with common featu
 
 Note: **As CRWN Apparel is not an actual commerical business, payments charged at checkout on the website are for testing purposes only and are _NOT REAL_ payments! For this, a test credit-card by Stripe has been provided at the checkout page for users to try out the payment processing of the application.**
 
-FYI: _**If you would like to try out the application but do not wish to manually sign up or sign in using your Google account, you can use the provided test account below.**_
+FYI: _**If you would like to try out the application but do not wish to manually sign up or sign in using your own Google account, you can use the provided test account below.**_
 
 * Email: **testuser@gmail.com**
 * Password: **qwert12345**
