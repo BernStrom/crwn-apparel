@@ -18,6 +18,11 @@ CRWN Apparel is an e-commerce clothing and accessories website with common featu
 
 Note: **As CRWN Apparel is not an actual commerical business, payments charged at checkout on the website are for testing purposes only and are _NOT REAL_ payments! For this, a test credit-card by Stripe has been provided at the checkout page for users to try out the payment processing of the application.**
 
+FYI: _If you would like to try out the application but do not wish to manually sign up or sign in using your Google account, you can use the provided test account below._
+
+* Email: **testuser@gmail.com**
+* Password: **qwert12345**
+
 ## :muscle: Motivation
 In an effort to further improve my skills as a software engineer working with the React library, I wanted to build an application that would mimic a development environment in a professional capacity. As every development experience and workflow is unique in itself in both personal & professional work projects, the main goal here was to build something that a developer would commonly encounter when working in professional projects and to contribute a fully fleshed-out & working project to my professional portfolio.
 
@@ -25,7 +30,7 @@ This lead me to the idea of creating an e-commerce application that carries the 
 
 ## :gear: Core Tech Stack
 * :electron:&nbsp; React
-* :atom:&nbsp; Redux
+* :atom:&nbsp; Redux w/ Saga
 * :link:&nbsp; React Router
 * :performing_arts:&nbsp; Styled Components
 * :fire:&nbsp; Firebase Cloud Firestore
