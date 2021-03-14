@@ -21,7 +21,7 @@ Note: **As CRWN Apparel is not an actual commerical business, payments charged a
 FYI: _**If you would like to try out the application but do not wish to manually sign up or sign in using your own Google account, you can use the provided test account below.**_
 
 * Email: **testuser@gmail.com** &nbsp;:e-mail:
-* Password: **qwert12345** &nbsp;:closed_lock_with_key:
+* Password: **YKU@Du$EHeY6** &nbsp;:closed_lock_with_key:
 
 ## :muscle: Motivation
 In an effort to further improve my skills as a software engineer working with the React library, I wanted to build an application that would mimic a development environment in a professional capacity. As every development experience and workflow is unique in itself in both personal & professional work projects, the main goal here was to build something that a developer would commonly encounter when working in professional projects and to contribute a fully fleshed-out & working project to my professional portfolio.
