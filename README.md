@@ -48,6 +48,4 @@ This lead me to the idea of creating an e-commerce application that carries the 
 This project is licensed under the terms of the MIT license. For more information, please refer to the license [documentation](LICENSE.md).
 
 ## :warning: Disclaimer
-CRWN Apparel is an e-commerce clothing and accessories web application project created to enrich the learning process of mainly working with React as its core library along with other supporting technologies. 
-
 The contents of these pages are provided as an information guide only. While every effort is made in preparing the material for publication, no responsibility is accepted by or on behalf of the owner(s) for any errors, omissions or misleading statements on these pages or any site to which these pages connect. Although every effort is made to ensure the reliability of listed sites this cannot be taken as an endorsement of these sites.
