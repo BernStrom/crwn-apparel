@@ -7,7 +7,7 @@
   <a href="#warning-disclaimer">Disclaimer</a>
 </p>
 
-# **👑 CRWN APPAREL** ![Heroku](https://heroku-badge.herokuapp.com/?app=crwn-aprl)
+# **👑 CRWN APPAREL**
 
 <img width="100%" src="assets/app-demo.png" alt="CRWN Apparel Homepage"> 
 
