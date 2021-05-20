@@ -18,7 +18,7 @@
     "dotenv": "9.0.2",
     "express": "^4.17.1",
     "express-sslify": "^1.2.0",
-    "stripe": "8.148.0"
+    "stripe": "8.149.0"
   },
   "devDependencies": {
     "concurrently": "^6.1.0",
